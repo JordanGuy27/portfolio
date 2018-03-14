@@ -77,3 +77,19 @@
         }
     }
 }
+
+.emailMe {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color: #fc6a55;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'roboto condensed';
+    transition: all 0.4s;
+    text-decoration: none;
+    &:hover {
+        color: #ee2a0c;
+    }
+}
