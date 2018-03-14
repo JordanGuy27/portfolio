@@ -31,10 +31,17 @@
     justify-content: space-between;
 }
 
-.aboutDescription, .headshot {
+.aboutDescription {
     width: 50%;
     display: flex;
     justify-content: space-between;
+    p {
+        margin-top: 0;
+    }
+}
+
+.headshot {
+    width: 40%;
 }
 
 .aboutDescription {

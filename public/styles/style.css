@@ -236,10 +236,15 @@ header {
   width: 100%;
   justify-content: space-between; }
 
-.aboutDescription, .headshot {
+.aboutDescription {
   width: 50%;
   display: flex;
   justify-content: space-between; }
+  .aboutDescription p {
+    margin-top: 0; }
+
+.headshot {
+  width: 40%; }
 
 .aboutDescription {
   flex-direction: column; }
@@ -290,7 +295,7 @@ header {
 
 .heading h3 {
   padding: 60px;
-  margin-bottom: 0; }
+  margin: 0; }
 
 .project1 .description, .project2 .description, .project3 .description, .project4 .description {
   width: 40%;
@@ -405,7 +410,7 @@ footer {
   .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover {
     color: #ee2a0c; }
 
-@media (max-width: 1057px) {
+@media (max-width: 1060px) {
   .about {
     flex-direction: column-reverse; }
     .about .headshot {
@@ -502,7 +507,7 @@ footer {
     display: block;
     margin: 0 auto; }
   header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../public/styles/assets/hero5.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../public/styles/assets/hero5-min.jpg");
     height: 100vh;
     background-position: right;
     background-size: cover; }
