@@ -1,0 +1,204 @@
+@media (max-width: 1000px) {
+    .project1, .project3 {
+        flex-direction: column;
+        margin: 25px 0;
+        .description {
+            width: 100%;
+            text-align: center;
+        }
+        .heading h3 {
+            padding-top: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+     .project2, .project4 {
+        flex-direction: column-reverse;
+        margin: 25px 0;
+        .description {
+            width: 100%;
+            text-align: center;
+        }
+        .heading h3 {
+            padding-top: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .projects h4 {
+        font-size: 25px;
+    }
+    .projectContainer {
+        padding-bottom: 0;
+    }
+    .projectButton {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        button {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    div.emailPhone {
+        flex-direction: column;
+        input#email {
+            margin-left: 0;
+        }
+    }
+    div.icons i {
+        width: 50%;
+    }
+    .footerInfo {
+        flex-direction: column;
+        p {
+            font-size: 14px;
+            text-align: center;
+        }
+        .social {
+            margin: 10px;
+        }
+    }
+    .fa-twitter, .fa-linkedin, .fa-github {
+        font-size: 30px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .skills {
+        flex-wrap: wrap;
+    }
+    .about {
+        flex-direction: column-reverse;
+        .headshot {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .aboutDescription {
+        flex-direction: column;
+        width: 100%;
+        p {
+            text-align: center;
+        }
+        .social {
+            justify-content: center;
+        }
+    }
+    .aboutMe .social {
+        flex-direction: row;
+        padding-top: 20px;
+        padding-right: 0;
+        .fa-twitter, .fa-linkedin, .fa-github {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .mainHeading h1 {
+        font-size: 70px;
+    }
+    .mainHeading h2 {
+        font-size: 25px;
+    }
+    .mainHeading button {
+        padding: 10px 30px;
+    }
+    div.logo {
+        display: none;
+    }
+    .title {
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('../../public/styles/assets/hero5.jpg');
+        height: 100vh;
+        background-position: right;
+        background-size: cover;
+        .mainNav {
+        justify-content: center;
+        ul a {
+            margin: 10px;
+        }
+    }
+    }
+    // .about {
+    //     flex-direction: column-reverse;
+    //     .headshot {
+    //         width: 60%;
+    //         display: block;
+    //         margin: 0 auto;
+    //     }
+    // }
+    // .aboutDescription {
+    //     flex-direction: column;
+    //     width: 100%;
+    //     p {
+    //         text-align: center;
+    //     }
+    //     .social {
+    //         justify-content: center;
+    //     }
+    // }
+    // .aboutMe .social {
+    //     flex-direction: row;
+    //     padding-top: 20px;
+    //     padding-right: 0;
+    //     .fa-twitter, .fa-linkedin, .fa-github {
+    //         font-size: 40px;
+    //     }
+    // }
+    .heading, .projectContainer, .contact {
+        h3 {
+            font-size: 30px;
+            padding: 30px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .projectButton button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactForm input, .contactContainer textarea {
+        font-size: 16px;
+    }
+    .contact input.send {
+        font-size: 14px;
+        padding: 10px 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    .mainHeading h1 {
+        font-size: 50px;
+    }
+    header .mainNav ul {
+        width: 100%;
+        a {
+            margin: 5px;
+            padding-top: 20px;
+        }
+    }
+    .projects button {
+        font-size: 12px;
+        padding: 12px 45px;
+    }
+    .title {
+        display: block;
+        margin: 0 auto;
+    }
+}

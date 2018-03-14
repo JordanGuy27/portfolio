@@ -1,0 +1,26 @@
+footer {
+    padding: 40px;
+    background-color: #333;
+}
+.footerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info p {
+    font-family: Roboto;
+    color: #fff;
+    font-size: 12px;
+}
+
+.fa-twitter, .fa-github, .fa-linkedin {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: all 0.3s;
+    &:hover {
+       color: #ee2a0c;
+    }
+}

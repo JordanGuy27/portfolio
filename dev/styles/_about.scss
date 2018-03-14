@@ -1,0 +1,47 @@
+.aboutMe {
+    background-color: #f2f2f2;
+    padding-bottom: 40px;
+    h3 {
+        margin: 0;
+        padding: 60px;
+    }
+    p {
+        padding: 0 20px;
+        text-align: right;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        .fa-twitter, .fa-github, .fa-linkedin {
+            font-size: 35px;
+            color: black;
+            margin-bottom: 10px;
+            &:hover {
+                color: #ee2a0c;
+            }       
+    }
+}
+}
+
+.about {
+    background-color: #f2f2f2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.aboutDescription, .headshot {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutDescription {
+    flex-direction: column;
+    .social {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
