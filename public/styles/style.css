@@ -219,6 +219,7 @@ header {
   .aboutMe .social {
     display: flex;
     flex-direction: column;
+    padding-right: 0;
     padding-right: 20px; }
     .aboutMe .social .fa-twitter, .aboutMe .social .fa-github, .aboutMe .social .fa-linkedin {
       font-size: 35px;
@@ -250,6 +251,11 @@ header {
     justify-content: flex-end; }
   .aboutDescription span {
     font-weight: bold; }
+  .aboutDescription a {
+    text-decoration: none;
+    color: #fc6a55; }
+    .aboutDescription a:hover {
+      color: #ee2a0c; }
 
 .projectContainer {
   background-color: #fff;
@@ -412,13 +418,13 @@ footer {
   color: #fff;
   font-size: 12px; }
 
-.fa-twitter, .fa-github, .fa-linkedin {
+.fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
   margin-left: 10px;
   transition: all 0.3s; }
-  .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover {
+  .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover {
     color: #ee2a0c; }
 
 @media (max-width: 1060px) {
@@ -438,8 +444,7 @@ footer {
       justify-content: center; }
   .aboutMe .social {
     flex-direction: row;
-    padding-top: 20px;
-    padding-right: 0; }
+    padding-top: 20px; }
     .aboutMe .social .fa-twitter, .aboutMe .social .fa-linkedin, .aboutMe .social .fa-github {
       font-size: 40px; } }
 
@@ -497,9 +502,11 @@ footer {
       text-align: center; }
     .footerInfo .social {
       margin: 10px; }
+  .aboutDescription .social {
+    padding-right: 0; }
   .fa-twitter, .fa-linkedin, .fa-github {
     font-size: 30px;
-    margin: 5px; } }
+    margin: 10px; } }
 
 @media (max-width: 800px) {
   .skills {
@@ -545,7 +552,11 @@ footer {
     font-size: 14px;
     padding: 10px 45px; }
   .projectButton a.seeLive, .projectButton a.github {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .aboutDescription p {
+    font-size: 14px; }
+  .aboutMe .social .fa-twitter, .aboutMe .social .fa-linkedin, .aboutMe .social .fa-github {
+    font-size: 30px; } }
 
 @media (max-width: 375px) {
   .mainHeading h1 {
