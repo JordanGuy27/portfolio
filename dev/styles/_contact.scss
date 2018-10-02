@@ -1,6 +1,11 @@
 .contact {
     background-color: #333333;
     padding: 40px 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url("./../../public/styles/assets/torontoRink.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
     h3 {
         color: #fff;
         margin-top: 0;

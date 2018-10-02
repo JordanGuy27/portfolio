@@ -1,6 +1,6 @@
 footer {
     padding: 40px;
-    background-color: #333;
+    background-color: #f2f2f2;
 }
 .footerInfo {
     display: flex;
@@ -10,14 +10,14 @@ footer {
 
 .info p {
     font-family: Roboto;
-    color: #fff;
+    color: black;
     font-size: 12px;
 }
 
 .fa-twitter, .fa-github, .fa-linkedin {
-    color: #fff;
+    color: #fc6a55;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     margin-left: 10px;
     transition: all 0.3s;
     &:hover {
