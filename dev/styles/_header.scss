@@ -51,6 +51,12 @@ header {
     }
 } 
 
+.fullNav {
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    z-index: 100;
+}
+
 .mainHeading {
     height: 80vh;
     display: flex;

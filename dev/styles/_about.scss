@@ -1,6 +1,6 @@
 .aboutMe {
     background-color: #f2f2f2;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     h3 {
         margin: 0;
         padding: 60px;
@@ -43,7 +43,9 @@
 
 .headshot {
     width: 40%;
-    
+    img {
+        box-shadow: 25px 20px #fc6a55;
+    }
 }
 
 .aboutDescription {
