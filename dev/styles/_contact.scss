@@ -33,6 +33,7 @@
         background-color: #fc6a55;
         color: #fff;
         padding: 16px 65px;
+        margin-top: 50px;
         width: 50%;
         font-size: 16px;
         text-transform: uppercase;
@@ -92,3 +93,35 @@
         color: #ee2a0c;
     }
 }
+
+.contactEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center {
+        display: flex;
+        align-items: center;
+    }
+    .marginRight {
+        margin-right: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #fc6a55;
+        transition: all 0.5s ease;
+        &:hover {
+            color: #ee2a0c;
+        }
+        .fa-envelope {
+            font-size: 25px;
+        }
+    }
+}
+
+.contactOr {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        font-size: 20px;
+        color: #fff;
+    }

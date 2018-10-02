@@ -369,6 +369,7 @@ header {
     background-color: #fc6a55;
     color: #fff;
     padding: 16px 65px;
+    margin-top: 50px;
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
@@ -418,6 +419,31 @@ header {
   .emailMe:hover {
     color: #ee2a0c; }
 
+.contactEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contactEmail .center {
+    display: flex;
+    align-items: center; }
+  .contactEmail .marginRight {
+    margin-right: 10px; }
+  .contactEmail a {
+    text-decoration: none;
+    color: #fc6a55;
+    transition: all 0.5s ease; }
+    .contactEmail a:hover {
+      color: #ee2a0c; }
+    .contactEmail a .fa-envelope {
+      font-size: 25px; }
+
+.contactOr {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #fff; }
+
 footer {
   padding: 40px;
   background-color: #333; }
@@ -432,13 +458,13 @@ footer {
   color: #fff;
   font-size: 12px; }
 
-.fa-twitter, .fa-github, .fa-linkedin, .fa-envelope {
+.fa-twitter, .fa-github, .fa-linkedin {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
   margin-left: 10px;
   transition: all 0.3s; }
-  .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover {
+  .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover {
     color: #ee2a0c; }
 
 @media (max-width: 1060px) {
