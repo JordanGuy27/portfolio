@@ -19,11 +19,21 @@
         padding-top: 60px;
         padding-bottom: 40px;
         margin: 0;
+        font-family: 'Lobster', cursive;
     }
 }
 
-.icons i {
-    font-size: 60px;
-    width: 100%;
-    transition: all 0.2s;
+.icons {
+    img {
+        max-width: 60px;
+    }
+    i {
+        font-size: 60px;
+        width: 100%;
+        color: #fc6a55;
+        transition: all 0.2s;
+    }
+    p {
+        font-size: 14px;
+    }
 }

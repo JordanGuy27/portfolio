@@ -133,7 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("./../../public/styles/assets/hero4-min.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("./../../public/styles/assets/hero4-min.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,7 +178,7 @@ header {
       margin: 0; }
 
 .fullNav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   z-index: 100; }
 
@@ -187,13 +187,13 @@ header {
   display: flex;
   align-items: center; }
   .mainHeading h1 {
-    margin-bottom: 0;
-    font-family: 'Roboto Condensed';
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
     color: #fff;
     font-size: 90px;
     width: 100%; }
   .mainHeading h2 {
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: 'Roboto Condensed';
     color: #fff;
     width: 100%; }
@@ -219,7 +219,8 @@ header {
   padding-bottom: 60px; }
   .aboutMe h3 {
     margin: 0;
-    padding: 60px; }
+    padding: 60px;
+    font-family: 'Lobster', cursive; }
   .aboutMe p {
     padding: 0 20px;
     text-align: right; }
@@ -269,14 +270,15 @@ header {
 .projectContainer {
   background-color: #fff;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("./../../public/styles/assets/GoT.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("./../../public/styles/assets/GoT.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center; }
   .projectContainer h3 {
     color: #fff;
-    margin: 0; }
+    margin: 0;
+    font-family: 'Lobster', cursive; }
 
 .projects {
   display: flex;
@@ -335,12 +337,20 @@ header {
 #skills h3 {
   padding-top: 60px;
   padding-bottom: 40px;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Lobster', cursive; }
+
+.icons img {
+  max-width: 60px; }
 
 .icons i {
   font-size: 60px;
   width: 100%;
+  color: #fc6a55;
   transition: all 0.2s; }
+
+.icons p {
+  font-size: 14px; }
 
 .contact {
   background-color: #333333;
@@ -354,7 +364,8 @@ header {
     color: #fff;
     margin-top: 0;
     margin-bottom: 1px;
-    padding: 30px; }
+    padding: 30px;
+    font-family: 'Lobster', cursive; }
 
 .contactForm {
   display: flex;
