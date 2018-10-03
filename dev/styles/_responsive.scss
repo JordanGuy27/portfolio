@@ -25,10 +25,7 @@
             font-size: 40px;
         }
     }
-    .aboutMe h3 {
-        padding: 40px;
-        font-size: 30px;
-    }
+    
 }
 
 @media (max-width: 1000px) {
@@ -91,9 +88,14 @@
         }
     }
 
+    .aboutMe h3 {
+        padding: 40px;
+        font-size: 40px;
+    }
+
     .contact {
         h3 {
-            font-size: 30px;
+            font-size: 40px;
             padding: 0;
         }
     }
@@ -107,7 +109,7 @@
     }
 
     .projectContainer h3, #skills h3 {
-        font-size: 30px;
+        font-size: 40px;
         padding-bottom: 10px;
     }
 

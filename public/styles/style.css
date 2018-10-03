@@ -250,9 +250,22 @@ header {
     margin-top: 0; }
 
 .headshot {
-  width: 40%; }
+  width: 40%;
+  position: relative; }
   .headshot img {
+    max-width: 100%;
     box-shadow: 25px 20px #fc6a55; }
+  .headshot:hover .marv {
+    opacity: 1; }
+  .headshot .marv {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out; }
+
+img#headshot {
+  transition: all 10s ease; }
 
 .aboutDescription {
   flex-direction: column; }
@@ -507,10 +520,7 @@ footer {
     flex-direction: row;
     padding-top: 20px; }
     .aboutMe .social .fa-twitter, .aboutMe .social .fa-linkedin, .aboutMe .social .fa-github {
-      font-size: 40px; }
-  .aboutMe h3 {
-    padding: 40px;
-    font-size: 30px; } }
+      font-size: 40px; } }
 
 @media (max-width: 1000px) {
   .project2, .project3 {
@@ -554,15 +564,18 @@ footer {
   .heading h3 {
     font-size: 30px;
     padding: 30px; }
+  .aboutMe h3 {
+    padding: 40px;
+    font-size: 40px; }
   .contact h3 {
-    font-size: 30px;
+    font-size: 40px;
     padding: 0; }
   .contactEmail .center {
     margin-top: 10px; }
   .contactOr {
     margin-top: 20px; }
   .projectContainer h3, #skills h3 {
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 10px; }
   #skills h3 {
     padding-top: 30px; } }

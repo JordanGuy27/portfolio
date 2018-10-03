@@ -44,9 +44,26 @@
 
 .headshot {
     width: 40%;
+    position: relative;
     img {
+        max-width: 100%;
         box-shadow: 25px 20px #fc6a55;
     }
+    &:hover .marv {
+        opacity: 1;
+    }
+    .marv {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+}
+
+img#headshot {
+    transition: all 10s ease;
 }
 
 .aboutDescription {
