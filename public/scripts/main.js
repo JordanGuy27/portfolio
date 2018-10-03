@@ -8,8 +8,10 @@ $(document).ready(function () {
 
 var $hamburger = $(".hamburger");
 var $nav = $(".hamburgerNav");
+var $heading = $(".mainHeading");
 
 $hamburger.on("click", function (e) {
     $hamburger.toggleClass("is-active");
     $nav.toggleClass("active");
+    $heading.toggleClass("gradient");
 });

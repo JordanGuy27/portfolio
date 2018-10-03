@@ -6,10 +6,12 @@ $(document).ready(function(){
 
 let $hamburger = $(".hamburger");
 let $nav = $(".hamburgerNav");
+let $heading = $(".mainHeading");
 
 $hamburger.on("click", function (e) {
     $hamburger.toggleClass("is-active");
     $nav.toggleClass("active");
+    $heading.toggleClass("gradient");
 });
 
 

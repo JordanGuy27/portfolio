@@ -174,7 +174,7 @@ header {
       margin: 0; }
 
 .fullNav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   z-index: 100; }
 
@@ -215,24 +215,29 @@ header {
 
 .hamburgerNav {
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   z-index: 300; }
   .hamburgerNav .hamburgerNavLinks {
     padding: 0; }
   .hamburgerNav a {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    background-color: transparent; }
   .hamburgerNav li {
-    list-style: none; }
+    list-style: none;
+    text-align: right; }
 
 .hamburgerNav.active {
   display: inline-block;
   right: 0;
   top: 0;
-  width: 40%;
+  width: 60%;
   position: absolute; }
 
 span.hamburger-inner::after {
   color: red; }
+
+.gradient {
+  linear-gradient: to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5); }
 
 .aboutMe {
   background-color: #f2f2f2;
@@ -624,6 +629,8 @@ footer {
     .project1 img, .project4 img {
       display: block;
       margin: 0 auto; }
+  .project1 {
+    margin-bottom: 40px; }
   .projectButton a.seeLive, .projectButton a.github {
     width: 50%; }
   .projects h4 {
