@@ -29,6 +29,7 @@ header {
                 padding-top: 40px;
                 padding-bottom: 6px;
                 font-size: 16px;
+                z-index: 100;
                 text-transform: uppercase;
                 font-family: 'Roboto Condensed';
                 // transition: all 0.3s ease;
@@ -93,4 +94,35 @@ header {
         }
     }
     
+}
+
+.hamburger {
+        display: none;
+    }
+
+.hamburgerNav {
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 300;
+    .hamburgerNavLinks {
+        padding: 0;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.hamburgerNav.active  {
+    display: inline-block;  
+    right: 0;
+    top: 0; 
+    width: 40%;
+    position: absolute;
+}
+
+span.hamburger-inner::after {
+    color: red;
 }

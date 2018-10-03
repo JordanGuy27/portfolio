@@ -25,7 +25,15 @@
             font-size: 40px;
         }
     }
-    
+
+    .hamburger {
+        display: inline-block;
+        justify-content: flex-end;
+    }
+
+    .standardNav {
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -168,17 +176,23 @@
     div.logo {
         display: none;
     }
-    .title {
-        display: block;
-        margin: 0 auto;
+    // .title {
+    //     display: block;
+    //     margin: 0 auto;
+    // }
+
+    button.hamburger {
+        padding: 25px 0;
+        margin-top: 5px;
     }
+
     header {
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('../../public/styles/assets/hero5-min.jpg');
         height: 100vh;
         background-position: right;
         background-size: cover;
         .mainNav {
-        justify-content: center;
+        justify-content: flex-end;
         ul a {
             margin: 10px;
         }

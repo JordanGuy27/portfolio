@@ -4,3 +4,16 @@ $(document).ready(function(){
     });
 }) 
 
+let $hamburger = $(".hamburger");
+let $nav = $(".hamburgerNav");
+
+$hamburger.on("click", function (e) {
+    $hamburger.toggleClass("is-active");
+    $nav.toggleClass("active");
+});
+
+
+
+
+
+

@@ -162,6 +162,7 @@ header {
         padding-top: 40px;
         padding-bottom: 6px;
         font-size: 16px;
+        z-index: 100;
         text-transform: uppercase;
         font-family: 'Roboto Condensed'; }
         header .mainNav ul a li {
@@ -208,6 +209,30 @@ header {
     text-transform: uppercase; }
     .mainHeading a:hover {
       border-radius: 5px; }
+
+.hamburger {
+  display: none; }
+
+.hamburgerNav {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300; }
+  .hamburgerNav .hamburgerNavLinks {
+    padding: 0; }
+  .hamburgerNav a {
+    margin-bottom: 20px; }
+  .hamburgerNav li {
+    list-style: none; }
+
+.hamburgerNav.active {
+  display: inline-block;
+  right: 0;
+  top: 0;
+  width: 40%;
+  position: absolute; }
+
+span.hamburger-inner::after {
+  color: red; }
 
 .aboutMe {
   background-color: #f2f2f2;
@@ -321,6 +346,7 @@ a.seeLive, a.github {
   margin: 10px 0;
   width: 100%;
   border-style: none;
+  border-radius: 5px;
   text-decoration: none;
   color: #fff;
   padding: 16px 65px;
@@ -406,11 +432,12 @@ a.seeLive, a.github {
 .contact {
   background-color: #333333;
   padding: 40px 0;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("./../../public/styles/assets/torontoRink.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./../../public/styles/assets/torontoRink.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  min-height: 100vh; }
   .contact h3 {
     color: #fff;
     margin-top: 0;
@@ -427,9 +454,9 @@ a.seeLive, a.github {
     width: 100%;
     margin: 20px 0;
     padding: 10px;
-    background-color: #333;
+    background-color: #fff;
     border-style: none;
-    color: #fff;
+    color: black;
     font-size: 20px;
     border-bottom: 1px solid #fff;
     transition: 0.4s all; }
@@ -456,9 +483,9 @@ a.seeLive, a.github {
     width: 100%;
     font-family: Roboto;
     border-style: none;
-    background-color: #333;
+    background-color: #fff;
     margin-top: 10px;
-    color: #fff;
+    color: black;
     font-size: 20px;
     border-bottom: 1px solid #fff;
     padding: 10px;
@@ -567,7 +594,12 @@ footer {
     flex-direction: row;
     padding-top: 20px; }
     .aboutMe .social .fa-twitter, .aboutMe .social .fa-linkedin, .aboutMe .social .fa-github {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .hamburger {
+    display: inline-block;
+    justify-content: flex-end; }
+  .standardNav {
+    display: none; } }
 
 @media (max-width: 1000px) {
   .project2, .project3 {
@@ -660,16 +692,16 @@ footer {
     padding: 10px 30px; }
   div.logo {
     display: none; }
-  .title {
-    display: block;
-    margin: 0 auto; }
+  button.hamburger {
+    padding: 25px 0;
+    margin-top: 5px; }
   header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../public/styles/assets/hero5-min.jpg");
     height: 100vh;
     background-position: right;
     background-size: cover; }
     header .mainNav {
-      justify-content: center; }
+      justify-content: flex-end; }
       header .mainNav ul a {
         margin: 10px; }
   .projectButton a.seeLive, .projectButton a.github {
@@ -773,5 +805,3 @@ button {
   text-transform: uppercase;
   transition: 0.5s all ease-in;
   letter-spacing: 1px; }
-  button:hover {
-    background-color: #ee2a0c; }
