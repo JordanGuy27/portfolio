@@ -59,24 +59,3 @@ button  {
 			background-color: #ee2a0c;
 		}
 }
-
-a.seeLive, a.github {
-		text-align: left;
-		display: block;
-		margin: 10px 0;
-		width: 100%;
-        border-style: none;
-        text-decoration: none;
-        color: #fff;
-        padding: 16px 65px;
-        font-family: 'Roboto Condensed';
-        font-size: 14px;
-        font-weight: 700;
-        background-color: #fc6a55;
-		text-transform: uppercase;
-		transition: 0.5s all ease-in;
-		letter-spacing: 1px;
-		&:hover {
-			background-color: #ee2a0c;
-		}
-}

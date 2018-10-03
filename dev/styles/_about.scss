@@ -42,6 +42,15 @@
         text-decoration: none;
         .fa-bolt {
             color: #fc6a55;
+            font-size: 20px;
+        }
+        &:hover {
+            p {
+                color: #ee2a0c;
+            }
+            .fa-bolt {
+                color: #ee2a0c;
+            }
         }
     }
 }

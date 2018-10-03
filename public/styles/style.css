@@ -163,12 +163,7 @@ header {
         padding-bottom: 6px;
         font-size: 16px;
         text-transform: uppercase;
-        font-family: 'Roboto Condensed';
-        transition: all 0.3s ease; }
-        header .mainNav ul a:hover {
-          border-bottom: 1px solid #ee2a0c;
-          padding-bottom: 5px;
-          color: #ee2a0c; }
+        font-family: 'Roboto Condensed'; }
         header .mainNav ul a li {
           list-style: none; }
     header .mainNav h4 {
@@ -208,11 +203,11 @@ header {
     font-size: 14px;
     font-weight: 700;
     display: block;
+    border-radius: 5px;
     background-color: #fc6a55;
-    text-transform: uppercase;
-    transition: 0.4s all ease; }
+    text-transform: uppercase; }
     .mainHeading a:hover {
-      background-color: #ee2a0c; }
+      border-radius: 5px; }
 
 .aboutMe {
   background-color: #f2f2f2;
@@ -250,7 +245,12 @@ header {
     margin-top: 20px;
     text-decoration: none; }
     .scrollDown a .fa-bolt {
-      color: #fc6a55; }
+      color: #fc6a55;
+      font-size: 20px; }
+    .scrollDown a:hover p {
+      color: #ee2a0c; }
+    .scrollDown a:hover .fa-bolt {
+      color: #ee2a0c; }
 
 .aboutPortfolioButton {
   display: flex;
@@ -314,6 +314,22 @@ img#headshot {
     color: #fff;
     margin: 0;
     font-family: 'Lobster', cursive; }
+
+a.seeLive, a.github {
+  text-align: left;
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  border-style: none;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 65px;
+  font-family: 'Roboto Condensed';
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fc6a55;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .projects {
   display: flex;
@@ -429,7 +445,8 @@ img#headshot {
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in;
+    border-radius: 5px; }
     .contactForm input[type=submit]:hover {
       background-color: #ee2a0c; }
 
@@ -481,7 +498,14 @@ img#headshot {
   align-items: center; }
   .contactEmail .center {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fc6a55;
+    color: #fff; }
+    .contactEmail .center:hover {
+      background-color: #ee2a0c;
+      color: #fff; }
   .contactEmail .marginRight {
     margin-right: 10px; }
   .contactEmail a {
@@ -497,6 +521,7 @@ img#headshot {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 15px;
   font-size: 20px;
   color: #fff; }
 
@@ -749,23 +774,4 @@ button {
   transition: 0.5s all ease-in;
   letter-spacing: 1px; }
   button:hover {
-    background-color: #ee2a0c; }
-
-a.seeLive, a.github {
-  text-align: left;
-  display: block;
-  margin: 10px 0;
-  width: 100%;
-  border-style: none;
-  text-decoration: none;
-  color: #fff;
-  padding: 16px 65px;
-  font-family: 'Roboto Condensed';
-  font-size: 14px;
-  font-weight: 700;
-  background-color: #fc6a55;
-  text-transform: uppercase;
-  transition: 0.5s all ease-in;
-  letter-spacing: 1px; }
-  a.seeLive:hover, a.github:hover {
     background-color: #ee2a0c; }

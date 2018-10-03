@@ -44,6 +44,7 @@
         font-size: 16px;
         text-transform: uppercase;
         transition: all 0.5s ease-in;
+        border-radius: 5px;
         &:hover {
             background-color: #ee2a0c;
         }
@@ -107,6 +108,14 @@
     .center {
         display: flex;
         align-items: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #fc6a55;
+        color: #fff;
+        &:hover {
+            background-color: #ee2a0c;
+            color: #fff;
+        }
     }
     .marginRight {
         margin-right: 10px;
@@ -128,6 +137,7 @@
         display: flex;
         justify-content: center;
         margin-top: 40px;
+        margin-bottom: 15px;
         font-size: 20px;
         color: #fff;
     }
