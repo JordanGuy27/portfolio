@@ -567,6 +567,29 @@ a.seeLive, a.github {
   font-size: 20px;
   color: #fff; }
 
+.sideLines {
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  line-height: 0.5;
+  font-size: 25px; }
+  .sideLines span {
+    display: inline-block;
+    position: relative; }
+  .sideLines span:before, .sideLines span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 0;
+    width: 100px; }
+  .sideLines span:before {
+    right: 100%;
+    margin-right: 15px; }
+  .sideLines span:after {
+    left: 100%;
+    margin-left: 15px; }
+
 footer {
   padding: 40px;
   background-color: #f2f2f2; }
