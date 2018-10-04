@@ -23,7 +23,9 @@
 
 a.seeLive, a.github {
 		text-align: left;
-		display: block;
+        display: block;
+        display: flex;
+        align-items: center;
 		margin: 10px 0;
 		width: 100%;
         border-style: none;
@@ -68,6 +70,15 @@ a.seeLive, a.github {
     button {
         width: 100%;
         margin: 10px 0;
+    }
+}
+
+.projectButton  {
+    .devicon-github-plain, .fa-telegram-plane {
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
     }
 }
 
