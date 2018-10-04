@@ -398,7 +398,7 @@ a.seeLive, a.github {
     width: 100%;
     margin: 10px 0; }
 
-.project1, .project2, .project3, .project4 {
+.project1, .project2, .project3, .project4, .project5 {
   display: flex;
   justify-content: space-around;
   margin: 40px 0;
@@ -409,7 +409,7 @@ a.seeLive, a.github {
   padding-bottom: 25px;
   margin: 0; }
 
-.project1 .description, .project2 .description, .project3 .description, .project4 .description {
+.project1 .description, .project2 .description, .project3 .description, .project4 .description, .project5 .description {
   width: 40%;
   padding: 10px; }
 
@@ -468,7 +468,7 @@ a.seeLive, a.github {
     font-family: Roboto;
     width: 100%;
     margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     border-style: none;
     color: black;
@@ -503,7 +503,7 @@ a.seeLive, a.github {
     color: black;
     font-size: 20px;
     border-bottom: 1px solid #fff;
-    padding: 10px;
+    padding: 20px;
     transition: 0.4s all; }
     .contactContainer textarea:focus {
       color: #fc6a55;
@@ -653,15 +653,15 @@ footer {
     .project2 img, .project3 img {
       display: block;
       margin: 0 auto; }
-  .project1, .project4 {
+  .project1, .project4, .project5 {
     flex-direction: column;
     margin: 25px 0; }
-    .project1 .description, .project4 .description {
+    .project1 .description, .project4 .description, .project5 .description {
       width: 100%;
       text-align: center; }
-    .project1 .heading h3, .project4 .heading h3 {
+    .project1 .heading h3, .project4 .heading h3, .project5 .heading h3 {
       padding-top: 0; }
-    .project1 img, .project4 img {
+    .project1 img, .project4 img, .project5 img {
       display: block;
       margin: 0 auto; }
   .project1 {
@@ -696,9 +696,10 @@ footer {
     margin-top: 10px; }
   .contactOr {
     margin-top: 25px; }
-  .projectContainer h3, #skills h3 {
+  .projectContainer h3, .skillsHeader h3 {
     font-size: 40px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    padding-top: 40px; }
   #skills h3 {
     padding-top: 30px; } }
 
