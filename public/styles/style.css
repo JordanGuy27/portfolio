@@ -218,20 +218,28 @@ header {
   background-color: black;
   z-index: 300; }
   .hamburgerNav .hamburgerNavLinks {
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column; }
   .hamburgerNav a {
     margin-bottom: 20px;
-    background-color: transparent; }
+    margin-top: 20px;
+    background-color: #ee2a0c;
+    width: 50%;
+    text-align: center; }
   .hamburgerNav li {
-    list-style: none;
-    text-align: right; }
+    list-style: none; }
 
 .hamburgerNav.active {
   display: inline-block;
   right: 0;
-  top: 0;
-  width: 60%;
-  position: absolute; }
+  top: 70px;
+  width: 100%;
+  height: calc(100% - 71px);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9); }
 
 span.hamburger-inner::after {
   color: red; }
@@ -664,7 +672,7 @@ footer {
   .contactEmail .center {
     margin-top: 10px; }
   .contactOr {
-    margin-top: 20px; }
+    margin-top: 25px; }
   .projectContainer h3, #skills h3 {
     font-size: 40px;
     padding-bottom: 10px; }
@@ -705,7 +713,7 @@ footer {
   div.logo {
     display: none; }
   button.hamburger {
-    padding: 25px 0;
+    padding: 20px 0;
     margin-top: 5px; }
   header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../../public/styles/assets/hero5-min.jpg");
@@ -736,7 +744,9 @@ footer {
   .aboutDescription p {
     font-size: 14px; }
   .aboutMe .social .fa-twitter, .aboutMe .social .fa-linkedin, .aboutMe .social .fa-github {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .aboutMe .social .hamburgerNav .hamburgerNavLinks {
+    width: 100%; } }
 
 @media (max-width: 375px) {
   .mainHeading h1 {
@@ -778,8 +788,7 @@ footer {
 
 .wrapper {
   max-width: 80%;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
 
 h3 {
   text-align: center;

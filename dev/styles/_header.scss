@@ -106,23 +106,31 @@ header {
     z-index: 300;
     .hamburgerNavLinks {
         padding: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
     }
     a {
         margin-bottom: 20px;
-        background-color: transparent;
+        margin-top: 20px;
+        background-color: #ee2a0c;
+        width: 50%;
+        text-align: center;
     }
     li {
         list-style: none;
-        text-align: right;
     }
 }
 
 .hamburgerNav.active  {
     display: inline-block;  
     right: 0;
-    top: 0; 
-    width: 60%;
+    top: 70px; 
+    width: 100%;
+    height: calc(100% - 71px);
     position: absolute;
+    background-color: rgba(0,0,0,0.9);
 }
 
 span.hamburger-inner::after {

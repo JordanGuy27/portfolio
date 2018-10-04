@@ -12,6 +12,11 @@ $hamburger.on("click", function (e) {
     $nav.toggleClass("active");
 });
 
+$nav.on("click", function() {
+    $hamburger.toggleClass("is-active");
+    $nav.toggleClass("active");
+})
+
 
 
 
