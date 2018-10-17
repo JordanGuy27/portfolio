@@ -37,7 +37,9 @@
     .standardNav {
         display: none;
     }
-
+    .imgContainer {
+        width: 45%;
+    }
     .fullNav {
         background-color: black;
     }
@@ -77,23 +79,22 @@
     .project1 {
         margin-bottom: 40px;
     }
-    .projectButton a.seeLive, .projectButton a.github {
-        width: 50%;
-    }
     .projects h4 {
         font-size: 25px;
         margin: 15px 0;
     }
     .projects h5 {
-        width: 50%;
-        margin: 0 auto;
         font-size: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .projectContainer {
         padding-bottom: 0;
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
 
+    }
+    .imgContainer {
+        width: 100%;
+        margin: 15px 0px;
     }
     .projectButton {
         display: flex;
@@ -177,10 +178,19 @@
 @media (max-width: 800px) {
     .skills {
         flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .project1, .project2, .project3, .project4, .project5 {
+        padding: 20px;
     }
 }
 
 @media (max-width: 700px) {
+    .imgContainer {
+        img {
+            box-shadow: 5px 5px 10px #fc6a55;
+        }
+    }
     .mainHeading h1 {
         font-size: 70px;
     }
@@ -232,7 +242,8 @@
     }
     .contact input.send {
         font-size: 14px;
-        padding: 10px 45px;
+        padding: 15px;
+        width: 80%;
     }
     .projectButton a.seeLive, .projectButton a.github {
         font-size: 12px;
@@ -269,7 +280,21 @@
         display: block;
         margin: 0 auto;
     }
+    .skills .icons {
+        width: 30%;
+    }
     .contact input.send {
         font-size: 12px;
+    }
+    a.seeLive, a.github {
+        padding: 16px;
+    }
+    .projects {
+        h5 {
+            font-size: 13px;
+        }
+        h4.language {
+            font-size: 15px;
+        }
     }
 }
