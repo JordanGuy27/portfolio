@@ -355,15 +355,8 @@ img#headshot {
   flex-direction: column;
   justify-content: center;
   width: 35%; }
-
-.project2 .imgContainer img,
-.project3 .imgContainer img {
-  box-shadow: 10px -10px 10px #fc6a55;
-  border-radius: 10px; }
-
-.project5 img, .project4 img, .project1 img {
-  box-shadow: -10px -10px 10px #fc6a55;
-  border-radius: 10px; }
+  .imgContainer img {
+    box-shadow: 0px 35px 30px -27px #fc6a55; }
 
 a.seeLive, a.github {
   text-align: left;
@@ -417,7 +410,7 @@ a.seeLive, a.github {
   justify-content: space-around;
   margin: 40px 0;
   width: 100%;
-  background-color: rgba(72, 72, 72, 0.4);
+  background-color: rgba(72, 72, 72, 0.3);
   padding: 30px 0px;
   border-radius: 10px; }
 
@@ -487,11 +480,11 @@ a.seeLive, a.github {
     font-family: Roboto;
     width: 100%;
     margin: 20px 0;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
     border-style: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid #fff;
     transition: 0.4s all; }
     .contactForm input:focus {
@@ -520,9 +513,9 @@ a.seeLive, a.github {
     background-color: #fff;
     margin-top: 10px;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid #fff;
-    padding: 20px;
+    padding: 15px;
     transition: 0.4s all; }
     .contactContainer textarea:focus {
       color: #fc6a55;
@@ -758,8 +751,6 @@ footer {
     padding: 20px; } }
 
 @media (max-width: 700px) {
-  .imgContainer img {
-    box-shadow: 5px 5px 10px #fc6a55; }
   .mainHeading h1 {
     font-size: 70px; }
   .mainHeading h2 {
