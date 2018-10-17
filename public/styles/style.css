@@ -246,8 +246,8 @@ span.hamburger-inner::after {
 
 .aboutMe {
   background-color: #f2f2f2;
-  padding-bottom: 60px;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-bottom: 1px; }
   .aboutMe h3 {
     margin: 0;
     padding: 60px;
@@ -270,6 +270,7 @@ span.hamburger-inner::after {
 .scrollDown {
   width: 100%;
   display: flex;
+  margin: 40px 0px;
   justify-content: center;
   align-content: center; }
   .scrollDown p {
@@ -279,7 +280,7 @@ span.hamburger-inner::after {
   .scrollDown a {
     margin-top: 20px;
     text-decoration: none; }
-    .scrollDown a .fa-bolt {
+    .scrollDown a .fa-angle-down {
       color: #fc6a55;
       font-size: 20px; }
     .scrollDown a:hover p {
@@ -338,9 +339,8 @@ img#headshot {
       color: #ee2a0c; }
 
 .projectContainer {
-  background-color: #fff;
+  background-color: #202020;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("./../../public/styles/assets/GoT2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -353,7 +353,11 @@ img#headshot {
 .imgContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  width: 35%; }
+  .imgContainer img {
+    box-shadow: 10px 10px 10px #fc6a55;
+    border-radius: 10px; }
 
 a.seeLive, a.github {
   text-align: left;
@@ -406,7 +410,10 @@ a.seeLive, a.github {
   display: flex;
   justify-content: space-around;
   margin: 40px 0;
-  width: 100%; }
+  width: 100%;
+  background-color: rgba(72, 72, 72, 0.7);
+  padding: 30px 0px;
+  border-radius: 20px; }
 
 .heading h3 {
   padding: 60px;
@@ -455,8 +462,7 @@ a.seeLive, a.github {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-  min-height: 100vh; }
+  background-position: center; }
   .contact h3 {
     color: #fff;
     margin-top: 0;
@@ -637,6 +643,9 @@ footer {
     padding-top: 20px; }
     .aboutMe .social .fa-twitter, .aboutMe .social .fa-linkedin, .aboutMe .social .fa-github {
       font-size: 40px; }
+  .scrollDown {
+    margin-top: 20px;
+    margin-bottom: 40px; }
   .hamburger {
     display: inline-block;
     justify-content: flex-end; }
@@ -692,6 +701,8 @@ footer {
   .heading h3 {
     font-size: 30px;
     padding: 30px; }
+  .scrollDown a {
+    margin-top: 0; }
   .aboutMe h3 {
     padding: 40px;
     font-size: 40px; }

@@ -25,7 +25,10 @@
             font-size: 40px;
         }
     }
-
+    .scrollDown {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
     .hamburger {
         display: inline-block;
         justify-content: flex-end;
@@ -106,7 +109,9 @@
             padding: 30px;
         }
     }
-
+    .scrollDown a {
+        margin-top: 0;
+    }
     .aboutMe h3 {
         padding: 40px;
         font-size: 40px;
