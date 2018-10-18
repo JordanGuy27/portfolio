@@ -143,12 +143,12 @@ header {
   header .mainNav {
     display: flex;
     top: 0;
-    width: 100%;
-    justify-content: space-between; }
+    height: 70px;
+    justify-content: space-between;
+    align-items: center; }
     header .mainNav .logo {
-      align-content: flex-start;
-      padding: 40px;
-      padding-left: 0; }
+      align-items: center;
+      display: flex; }
     header .mainNav ul {
       display: flex;
       margin: 0;
@@ -158,12 +158,9 @@ header {
         text-decoration: none;
         outline: none;
         color: #fff;
-        margin-left: 20px;
-        padding-top: 40px;
-        padding-bottom: 6px;
-        font-size: 16px;
+        margin-left: 40px;
+        font-size: 20px;
         z-index: 100;
-        text-transform: uppercase;
         font-family: 'Roboto Condensed'; }
         header .mainNav ul a li {
           list-style: none; }
@@ -176,12 +173,15 @@ header {
 .fullNav {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  position: fixed;
+  height: 73px; }
 
 .mainHeading {
   height: 80vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-top: 70px; }
   .mainHeading h1 {
     margin-bottom: 20px;
     font-family: 'Lobster', cursive;
@@ -238,7 +238,7 @@ header {
   top: 70px;
   width: 100%;
   height: calc(100% - 71px);
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.9); }
 
 span.hamburger-inner::after {
@@ -757,7 +757,7 @@ footer {
     font-size: 25px; }
   .mainHeading button {
     padding: 10px 30px; }
-  div.logo {
+  header .mainNav .logo {
     display: none; }
   button.hamburger {
     padding: 20px 0;

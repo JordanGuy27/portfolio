@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('a').smoothScroll({
-        speed: 1300
+        speed: 1300,
+        offset: -72
     });
 }) 
 
