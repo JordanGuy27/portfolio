@@ -1,7 +1,12 @@
 $(document).ready(function(){
     $('a').smoothScroll({
         speed: 1300,
-        offset: -72
+        offset: -72,
+        callbackBefore: function (toggle, anchor) {
+        },
+        callbackAfter: function (toggle, anchor) {
+            $(toggle).addClass('activeNav');
+        }
     });
 }) 
 

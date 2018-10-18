@@ -29,6 +29,7 @@ header {
                 font-size: 20px;
                 z-index: 100;
                 font-family: 'Roboto Condensed';
+                transition: all 0.3s ease;
                 li {
                     list-style: none;
                 }
@@ -82,7 +83,6 @@ header {
         display: block;
         border-radius: 5px;
         background-color: #fc6a55;
-        text-transform: uppercase;
         &:hover {
             border-radius: 5px;
         }
