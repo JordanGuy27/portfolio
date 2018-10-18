@@ -165,6 +165,8 @@ header {
         transition: all 0.3s ease; }
         header .mainNav ul a li {
           list-style: none; }
+      header .mainNav ul a.homeButton {
+        color: #fc6a55; }
     header .mainNav h4 {
       font-family: Roboto;
       color: #fff;
@@ -255,30 +257,37 @@ span.hamburger-inner::after {
   .aboutMe p {
     padding: 0 20px;
     text-align: right; }
-  .aboutMe .social {
-    display: flex;
-    flex-direction: column;
-    padding-right: 0;
-    padding-right: 20px; }
-    .aboutMe .social .fa-twitter, .aboutMe .social .fa-github, .aboutMe .social .fa-linkedin {
-      font-size: 35px;
-      color: black;
-      margin-bottom: 10px; }
-      .aboutMe .social .fa-twitter:hover, .aboutMe .social .fa-github:hover, .aboutMe .social .fa-linkedin:hover {
-        color: #ee2a0c; }
+
+.social {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  position: fixed;
+  bottom: 2%;
+  right: 2.5%; }
+  .social .fa-twitter,
+  .social .fa-envelope,
+  .social .fa-github,
+  .social .fa-linkedin {
+    font-size: 35px;
+    color: #fc6a55;
+    margin-bottom: 10px; }
+    .social .fa-twitter:hover,
+    .social .fa-envelope:hover,
+    .social .fa-github:hover,
+    .social .fa-linkedin:hover {
+      color: #ee2a0c; }
 
 .scrollDown {
   width: 100%;
   display: flex;
-  margin: 40px 0px;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center; }
   .scrollDown p {
     margin-bottom: 5px;
     color: #333333;
     font-weight: bold; }
   .scrollDown a {
-    margin-top: 20px;
     text-decoration: none; }
     .scrollDown a .fa-angle-down {
       color: #fc6a55;
@@ -340,6 +349,11 @@ img#headshot {
 
 .projectContainer {
   background-color: #101010;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("./../../public/styles/assets/torontoBlackWhite.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   padding-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -410,7 +424,7 @@ a.seeLive, a.github {
   justify-content: space-around;
   margin: 40px 0;
   width: 100%;
-  background-color: rgba(72, 72, 72, 0.3);
+  background-color: rgba(72, 72, 72, 0.9);
   padding: 30px 0px;
   border-radius: 10px; }
 
@@ -603,17 +617,17 @@ a.seeLive, a.github {
     margin-left: 15px; }
 
 footer {
-  padding: 40px;
-  background-color: #f2f2f2; }
+  padding: 25px;
+  background-color: #101010; }
 
 .footerInfo {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .info p {
   font-family: Roboto;
-  color: black;
+  color: #fff;
   font-size: 12px; }
 
 .fa-twitter, .fa-github, .fa-linkedin {
@@ -624,6 +638,9 @@ footer {
   transition: all 0.3s; }
   .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover {
     color: #ee2a0c; }
+
+.socialBottom {
+  display: none; }
 
 @media (max-width: 1060px) {
   .about {
@@ -640,6 +657,8 @@ footer {
       text-align: center; }
     .aboutDescription .social {
       justify-content: center; }
+  .scrollDown {
+    justify-content: center; }
   .aboutMe .social {
     flex-direction: row;
     padding-top: 20px; }
@@ -748,7 +767,11 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 20px; }
   .project1, .project2, .project3, .project4, .project5 {
-    padding: 20px; } }
+    padding: 20px; }
+  .socialBottom {
+    display: inline-block; }
+  .social {
+    display: none; } }
 
 @media (max-width: 700px) {
   .mainHeading h1 {
