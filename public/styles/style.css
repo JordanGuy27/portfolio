@@ -178,7 +178,7 @@ header {
   width: 100%;
   z-index: 100;
   position: fixed;
-  height: 73px; }
+  height: 71px; }
 
 .mainHeading {
   height: 80vh;
@@ -223,7 +223,6 @@ header {
     padding: 0;
     display: flex;
     align-items: center;
-    margin-top: 50px;
     flex-direction: column; }
   .hamburgerNav a {
     margin-bottom: 20px;
@@ -237,9 +236,9 @@ header {
 .hamburgerNav.active {
   display: inline-block;
   right: 0;
-  top: 70px;
+  top: 69px;
   width: 100%;
-  height: calc(100% - 71px);
+  height: calc(100% - 70px);
   position: fixed;
   background-color: rgba(0, 0, 0, 0.9); }
 
@@ -248,8 +247,7 @@ span.hamburger-inner::after {
 
 .aboutMe {
   background-color: #f2f2f2;
-  min-height: 100vh;
-  padding-bottom: 1px; }
+  min-height: 100vh; }
   .aboutMe h3 {
     margin: 0;
     padding: 60px;
@@ -408,7 +406,8 @@ a.seeLive, a.github {
     font-family: 'Lobster', cursive; }
   .projects h5 {
     font-weight: normal;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 14px; }
   .projects button {
     width: 100%;
     margin: 10px 0; }
@@ -428,7 +427,7 @@ a.seeLive, a.github {
   padding: 30px 0px;
   border-radius: 10px; }
 
-.project5 {
+.project5, .project1 {
   padding: 50px 0; }
 
 .heading h3 {
@@ -495,6 +494,7 @@ a.seeLive, a.github {
     width: 100%;
     margin: 20px 0;
     padding: 15px;
+    border-radius: 5px;
     background-color: #fff;
     border-style: none;
     color: black;
@@ -524,6 +524,7 @@ a.seeLive, a.github {
     width: 100%;
     font-family: Roboto;
     border-style: none;
+    border-radius: 5px;
     background-color: #fff;
     margin-top: 10px;
     color: black;
@@ -560,23 +561,24 @@ a.seeLive, a.github {
   .emailMe:hover {
     color: #ee2a0c; }
 
+.marginRight {
+  margin-right: 10px; }
+
 .contactEmail {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .contactEmail .center {
+  align-items: center;
+  flex-direction: column; }
+  .contactEmail .centerEmail {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fc6a55;
+    color: #fff;
+    width: 100%; }
+  .contactEmail a {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #fc6a55;
-    color: #fff; }
-    .contactEmail .center:hover {
-      background-color: #ee2a0c;
-      color: #fff; }
-  .contactEmail .marginRight {
-    margin-right: 10px; }
-  .contactEmail a {
     text-decoration: none;
     color: #fc6a55;
     transition: all 0.5s ease; }
@@ -673,9 +675,7 @@ footer {
   .standardNav {
     display: none; }
   .imgContainer {
-    width: 45%; }
-  .fullNav {
-    background-color: black; } }
+    width: 45%; } }
 
 @media (max-width: 1000px) {
   .project2, .project3 {
@@ -769,9 +769,13 @@ footer {
   .project1, .project2, .project3, .project4, .project5 {
     padding: 20px; }
   .socialBottom {
-    display: inline-block; }
+    display: flex;
+    width: 100%;
+    justify-content: center; }
   .social {
-    display: none; } }
+    display: none; }
+  .centerEmail {
+    margin: 20px 0; } }
 
 @media (max-width: 700px) {
   .mainHeading h1 {

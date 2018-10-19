@@ -24,7 +24,7 @@
 					</div>
 					<nav class="standardNav">
 						<ul id="fixedNav">
-							<a href="#home" class="homeButton activeNav">
+							<a href="#home" class="homeButton">
 								<li class="hvr-underline-from-left">Home</li>
 							</a>
 							<a href="#aboutMe" class="aboutButton">
@@ -41,10 +41,10 @@
 							</a>
 						</ul>
 					</nav>
-					<button class="hamburger hamburger--emphatic" type="button">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
+<button class="hamburger hamburger--emphatic" tabindex="0" aria-label="Menu" type="button">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
 					</button>
 				</div>
 			</div>
@@ -53,6 +53,9 @@
 				<section class="mainHeading">
 					<nav class="hamburgerNav">
 						<ul class="hamburgerNavLinks">
+							<a href="#home">
+								<li class="hvr-underline-from-left">Home</li>
+							</a>
 							<a href="#aboutMe" class="aboutButton hvr-underline-from-left">
 								<li>About</li>
 							</a>
@@ -67,7 +70,7 @@
 							</a>
 						</ul>
 					</nav>
-					<div class="title" data-aos="fade-left" data-aos-duration="1500">
+					<div class="title" data-aos="fade-down" data-aos-duration="1500">
 						<h1>Jordan Guy</h1>
 						<h2>Web Developer</h3>
 						<a href="#aboutMe" class="hvr-shutter-out-vertical">Explore <i class="fas fa-angle-double-down"></i></a>
@@ -101,7 +104,7 @@
 				</section>
 			</div>
 		</div>
-		<div class="social">
+		<div class="social" data-aos="fade-up" data-aos-duration="1500">
 			<a href="https://twitter.com/Jguy27" target="_blank">
 				<i class="fab fa-twitter"></i>
 			</a>
@@ -120,7 +123,7 @@
 				<section class="projects">
 					<div class="project5" data-aos="fade-up" data-aos-duration="1000">
 						<div class="imgContainer">
-							<img src="./public/styles/assets/propertySparkShot.png" alt="">
+							<img src="./public/styles/assets/propertySparkShot2.png" alt="">
 						</div>
 						<div class="description">
 							<h4 class="title">PropertySpark Platform</h4>
@@ -139,16 +142,16 @@
 								<a target="_blank" href="https://github.com/JordanGuy27/Meme-better-than" class="github hvr-shutter-out-vertical"><i class="devicon-github-plain"></i>View on GitHub</a>
 							</div>
 						</div>
-						<div class="imgContainer"><img src="./public/styles/assets/meme.png" alt=""></div>
+						<div class="imgContainer"><img src="./public/styles/assets/meme2.png" alt=""></div>
 					</div>
 					<div class="project4" data-aos="fade-up" data-aos-duration="1000">
 						<div class="imgContainer">
-							<img src="./public/styles/assets/snackeryouShot.png" alt="">
+							<img src="./public/styles/assets/snackerYouShot2.png" alt="">
 						</div>
 						<div class="description">
 							<h4 class="title">snackerYou</h4>
-							<h4 class="language">Built with: React/Firebase/Google Maps API</h4>
-							<h5>A food tracking app that allows the user to search for restaurants in a specific area and store their choices!</h5>
+							<h4 class="language">Built with: React/Firebase/API</h4>
+							<h5>A food tracking app that allows the user to search for restaurants by name, city or address and store their choices! Uses the Zomato and Google Maps API's</h5>
 							<div class="projectButton">
 								<a target="_blank" href="https://dude-wheres-my-food.firebaseapp.com/" class="seeLive hvr-shutter-out-vertical"><i class="fab fa-telegram-plane"></i>See Live</a>
 								<a target="_blank" href="https://github.com/TeamENJ/SnackerYou" class="github hvr-shutter-out-vertical"><i class="devicon-github-plain"></i>View on GitHub</a>
@@ -165,10 +168,10 @@
 								<a target="_blank" href="https://github.com/JordanGuy27/beer-fridge-app" class="github hvr-shutter-out-vertical"><i class="devicon-github-plain"></i>View on GitHub</a>
 							</div>
 						</div>
-						<div class="imgContainer"><img src="./public/styles/assets/beerMeShot.png" alt=""></div>
+						<div class="imgContainer"><img src="./public/styles/assets/beerMeShot2.png" alt=""></div>
 					</div>
 					<div class="project1" data-aos="fade-up" data-aos-duration="1500">
-						<div class="imgContainer"><img src="./public/styles/assets/overShot.png" alt=""></div>
+						<div class="imgContainer"><img src="./public/styles/assets/overShot2.png" alt=""></div>
 						<div class="description">
 							<h4 class="title">Over</h4>
 							<h4 class="language">Built with: HTML/CSS</h4>
@@ -235,7 +238,14 @@
 			<div class="wrapper">
 				<h3>Contact Me</h3>
 				<div class="contactEmail">
-					<a href="mailto:jordan@jordanguy.ca" class="center"><i class="far fa-envelope marginRight"></i>E-mail</a>
+					<div class="centerEmail">
+						<a href="mailto:jordan@jordanguy.ca"><i class="fas fa-envelope marginRight"></i>Jordan@jordanguy.ca</a>
+					</div>
+					<div class="socialBottom">
+						<a href="https://twitter.com/Jguy27" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://github.com/JordanGuy27" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/jordan-guy-4b3528144/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
 				</div>
 				<div class="contactOr">
 					<h4 class="sideLines"><span>OR</span></h4>
@@ -265,11 +275,6 @@
 			<div class="footerInfo">
 				<div class="info">
 					<p>Jordan Guy &copy; 2018 | Headshot by Pam Lau</p>
-				</div>
-				<div class="socialBottom">
-					<a href="https://twitter.com/Jguy27" target="_blank"><i class="fab fa-twitter"></i></a>
-					<a href="https://github.com/JordanGuy27" target="_blank"><i class="fab fa-github"></i></a>
-					<a href="https://www.linkedin.com/in/jordan-guy-4b3528144/" target="_blank"><i class="fab fa-linkedin"></i></a>
 				</div>
 			</div>
 		</div>

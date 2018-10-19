@@ -23,6 +23,7 @@
         width: 100%;
         margin: 20px 0;
         padding: 15px;
+        border-radius: 5px;
         background-color: #fff;
         border-style: none;
         color: black;
@@ -57,6 +58,7 @@
         width: 100%;
         font-family: Roboto;
         border-style: none;
+        border-radius: 5px;
         background-color: #fff;
         margin-top: 10px;
         color: black;
@@ -100,27 +102,25 @@
         color: #ee2a0c;
     }
 }
-
+.marginRight {
+    margin-right: 10px;
+}
 .contactEmail {
     display: flex;
     justify-content: center;
     align-items: center;
-    .center {
+    flex-direction: column;
+    .centerEmail {
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        color: #fc6a55;
+        color: #fff;
+        width: 100%;
+    }
+    a {
         display: flex;
         align-items: center;
-        padding: 10px 20px;
-        border-radius: 5px;
-        background-color: #fc6a55;
-        color: #fff;
-        &:hover {
-            background-color: #ee2a0c;
-            color: #fff;
-        }
-    }
-    .marginRight {
-        margin-right: 10px;
-    }
-    a{
         text-decoration: none;
         color: #fc6a55;
         transition: all 0.5s ease;

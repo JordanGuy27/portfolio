@@ -43,9 +43,6 @@
     .imgContainer {
         width: 45%;
     }
-    .fullNav {
-        background-color: black;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -187,10 +184,15 @@
         padding: 20px;
     }
     .socialBottom {
-        display: inline-block;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
     .social {
         display: none;
+    }
+    .centerEmail {
+        margin: 20px 0;
     }
 }
 
@@ -219,7 +221,7 @@
         background-position: right;
         background-size: cover;
         .mainNav {
-        justify-content: flex-end;
+            justify-content: flex-end;
         ul a {
             margin: 10px;
         }

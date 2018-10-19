@@ -52,7 +52,7 @@ header {
     width: 100%;
     z-index: 100;
     position: fixed;
-    height: 73px;
+    height: 71px;
 }
 
 .mainHeading {
@@ -105,7 +105,6 @@ header {
         padding: 0;
         display: flex;
         align-items: center;
-        margin-top: 50px;
         flex-direction: column;
     }
     a {
@@ -123,9 +122,9 @@ header {
 .hamburgerNav.active  {
     display: inline-block;  
     right: 0;
-    top: 70px; 
+    top: 69px; 
     width: 100%;
-    height: calc(100% - 71px);
+    height: calc(100% - 70px);
     position: fixed;
     background-color: rgba(0,0,0,0.9);
 }
