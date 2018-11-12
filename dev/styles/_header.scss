@@ -32,6 +32,7 @@ header {
                 transition: all 0.3s ease;
                 li {
                     list-style: none;
+                    padding-bottom: 5px;
                 }
             }
             a.homeButton {
@@ -43,6 +44,7 @@ header {
         color: #fff;
         font-family: 'Roboto Condensed';
         margin: 0;
+        padding-bottom: 5px;
     }
     }
 } 

@@ -164,14 +164,16 @@ header {
         font-family: 'Roboto Condensed';
         transition: all 0.3s ease; }
         header .mainNav ul a li {
-          list-style: none; }
+          list-style: none;
+          padding-bottom: 5px; }
       header .mainNav ul a.homeButton {
         color: #fc6a55; }
     header .mainNav h4 {
       font-family: Roboto;
       color: #fff;
       font-family: 'Roboto Condensed';
-      margin: 0; }
+      margin: 0;
+      padding-bottom: 5px; }
 
 .fullNav {
   background-color: rgba(0, 0, 0, 0.7);
@@ -247,14 +249,13 @@ span.hamburger-inner::after {
 
 .aboutMe {
   background-color: #f2f2f2;
-  min-height: 100vh; }
+  min-height: calc(100vh - 70px); }
   .aboutMe h3 {
     margin: 0;
     padding: 60px;
     font-family: 'Lobster', cursive; }
   .aboutMe p {
-    padding: 0 20px;
-    text-align: right; }
+    padding: 0 20px; }
 
 .social {
   display: flex;
@@ -279,7 +280,6 @@ span.hamburger-inner::after {
 .scrollDown {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
   align-content: center; }
   .scrollDown p {
     margin-bottom: 5px;
@@ -292,7 +292,7 @@ span.hamburger-inner::after {
       font-size: 20px; }
     .scrollDown a:hover p {
       color: #ee2a0c; }
-    .scrollDown a:hover .fa-bolt {
+    .scrollDown a:hover .fa-angle-down {
       color: #ee2a0c; }
 
 .aboutPortfolioButton {
@@ -305,17 +305,19 @@ span.hamburger-inner::after {
   background-color: #f2f2f2;
   display: flex;
   width: 100%;
-  justify-content: space-between; }
+  justify-content: space-evenly;
+  align-items: center; }
 
 .aboutDescription {
   width: 50%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center;
+  align-items: center; }
   .aboutDescription p {
     margin-top: 0; }
 
 .headshot {
-  width: 40%;
+  width: 30%;
   position: relative; }
   .headshot img {
     max-width: 100%;
@@ -646,7 +648,7 @@ footer {
 
 @media (max-width: 1060px) {
   .about {
-    flex-direction: column-reverse; }
+    flex-direction: column; }
     .about .headshot {
       width: 60%;
       display: block;
@@ -661,6 +663,8 @@ footer {
       justify-content: center; }
   .scrollDown {
     justify-content: center; }
+  .aboutMe {
+    min-height: 0; }
   .aboutMe .social {
     flex-direction: row;
     padding-top: 20px; }

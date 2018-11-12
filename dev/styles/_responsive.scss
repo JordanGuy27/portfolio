@@ -1,6 +1,6 @@
 @media (max-width: 1060px) {
     .about {
-        flex-direction: column-reverse;
+        flex-direction: column;
         .headshot {
             width: 60%;
             display: block;
@@ -20,6 +20,9 @@
     }
     .scrollDown {
         justify-content: center;
+    }
+    .aboutMe {
+        min-height: 0;
     }
     .aboutMe .social {
         flex-direction: row;
