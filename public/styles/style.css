@@ -249,7 +249,7 @@ span.hamburger-inner::after {
 
 .aboutMe {
   background-color: #f2f2f2;
-  min-height: calc(100vh - 70px); }
+  padding-bottom: 60px; }
   .aboutMe h3 {
     margin: 0;
     padding: 60px;
@@ -284,7 +284,8 @@ span.hamburger-inner::after {
   .scrollDown p {
     margin-bottom: 5px;
     color: #333333;
-    font-weight: bold; }
+    font-size: 20px;
+    font-family: 'Lobster', cursive; }
   .scrollDown a {
     text-decoration: none; }
     .scrollDown a .fa-angle-down {
@@ -321,7 +322,7 @@ span.hamburger-inner::after {
   position: relative; }
   .headshot img {
     max-width: 100%;
-    box-shadow: 25px 20px #fc6a55; }
+    box-shadow: -10px 10px 10px #fc6a55; }
   .headshot:hover .marv {
     opacity: 1; }
   .headshot .marv {
@@ -475,7 +476,7 @@ a.seeLive, a.github {
 .contact {
   background-color: #333333;
   padding: 40px 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./../../public/styles/assets/s-l1600.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("./../../public/styles/assets/blackAbstract.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -650,7 +651,7 @@ footer {
   .about {
     flex-direction: column; }
     .about .headshot {
-      width: 60%;
+      width: 50%;
       display: block;
       margin: 0 auto;
       padding-bottom: 40px; }
@@ -664,7 +665,8 @@ footer {
   .scrollDown {
     justify-content: center; }
   .aboutMe {
-    min-height: 0; }
+    min-height: 0;
+    padding-bottom: 0; }
   .aboutMe .social {
     flex-direction: row;
     padding-top: 20px; }
