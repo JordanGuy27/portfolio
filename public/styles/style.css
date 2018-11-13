@@ -309,6 +309,11 @@ span.hamburger-inner::after {
   justify-content: space-evenly;
   align-items: center; }
 
+.headshotContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center; }
+
 .aboutDescription {
   width: 50%;
   display: flex;
@@ -318,7 +323,7 @@ span.hamburger-inner::after {
     margin-top: 0; }
 
 .headshot {
-  width: 30%;
+  width: 60%;
   position: relative; }
   .headshot img {
     max-width: 100%;
@@ -647,14 +652,16 @@ footer {
 .socialBottom {
   display: none; }
 
-@media (max-width: 1060px) {
+@media (max-width: 1250px) {
   .about {
     flex-direction: column; }
     .about .headshot {
-      width: 50%;
+      width: 40%;
       display: block;
       margin: 0 auto;
       padding-bottom: 40px; }
+  .headshotContainer {
+    width: 100%; }
   .aboutDescription {
     flex-direction: column;
     width: 100%; }
@@ -674,7 +681,9 @@ footer {
       font-size: 40px; }
   .scrollDown {
     margin-top: 20px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px; } }
+
+@media (max-width: 1060px) {
   .hamburger {
     display: inline-block;
     justify-content: flex-end; }

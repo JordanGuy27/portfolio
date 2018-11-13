@@ -1,12 +1,15 @@
-@media (max-width: 1060px) {
+@media (max-width: 1250px) {
     .about {
         flex-direction: column;
         .headshot {
-            width: 50%;
+            width: 40%;
             display: block;
             margin: 0 auto;
             padding-bottom: 40px;
         }
+    }
+    .headshotContainer {
+        width: 100%;
     }
     .aboutDescription {
         flex-direction: column;
@@ -36,6 +39,8 @@
         margin-top: 20px;
         margin-bottom: 40px;
     }
+}
+@media (max-width: 1060px) {
     .hamburger {
         display: inline-block;
         justify-content: flex-end;
