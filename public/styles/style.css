@@ -327,7 +327,7 @@ span.hamburger-inner::after {
   position: relative; }
   .headshot img {
     max-width: 100%;
-    box-shadow: -10px 10px 10px #fc6a55; }
+    box-shadow: -10px -10px 10px #fc6a55; }
   .headshot:hover .marv {
     opacity: 1; }
   .headshot .marv {
@@ -414,8 +414,8 @@ a.seeLive, a.github {
     font-family: 'Lobster', cursive; }
   .projects h5 {
     font-weight: normal;
-    margin-bottom: 20px;
-    font-size: 14px; }
+    margin-bottom: 40px;
+    font-size: 16px; }
   .projects button {
     width: 100%;
     margin: 10px 0; }
@@ -602,6 +602,9 @@ a.seeLive, a.github {
   margin-bottom: 15px;
   font-size: 20px;
   color: #fff; }
+  .contactOr h5 {
+    margin-bottom: 0;
+    text-align: center; }
 
 .sideLines {
   margin: 0;
@@ -610,13 +613,14 @@ a.seeLive, a.github {
   font-size: 25px; }
   .sideLines span {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    color: #fff; }
   .sideLines span:before, .sideLines span:after {
     content: "";
     position: absolute;
     height: 5px;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
+    border-bottom: 1px solid #fc6a55;
+    border-top: 1px solid #fc6a55;
     top: 0;
     width: 100px; }
   .sideLines span:before {
@@ -651,6 +655,10 @@ footer {
 
 .socialBottom {
   display: none; }
+
+.contactOr {
+  flex-direction: column;
+  align-items: center; }
 
 @media (max-width: 1250px) {
   .about {
@@ -787,6 +795,8 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center; }
+    .socialBottom .fa-twitter, .socialBottom .fa-github, .socialBottom .fa-linkedin {
+      color: #fff; }
   .social {
     display: none; }
   .centerEmail {

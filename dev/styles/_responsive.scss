@@ -196,6 +196,9 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        .fa-twitter, .fa-github, .fa-linkedin {
+            color: #fff;
+        }
     }
     .social {
         display: none;
